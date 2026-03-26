@@ -142,3 +142,12 @@ dist
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 .vite/
+
+
+# Private keys
+private
+private.pub
+*.pem
+*.key
+id_rsa
+id_rsa.pub
