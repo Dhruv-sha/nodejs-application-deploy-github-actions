@@ -1,3 +1,6 @@
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 name: Deploy Nodejs application to aws ec2
 
 on:
@@ -18,7 +21,7 @@ jobs:
         with:
           host: ${{ secrets.SSH_HOST }}
           username: ubuntu
-          key: ${{ secrets.SSH_KEY }}
+          key: ${{ secrets.SSH_KEYS }}
           script: |
             cd /home/ubuntu/nodejs-application-deploy-github-actions
             git pull
